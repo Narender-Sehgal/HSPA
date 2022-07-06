@@ -1,0 +1,25 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Property Type</th>
+        <th scope="col">Description</th>
+        <th scope="col">City</th>
+        <th scope="col">Facing</th>
+        <th scope="col">Furnished Status</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of propertyDetail">
+        <td>{{list.propertyType}}</td>
+        <td>{{list.description }}</td>
+        <td>{{list.city }}</td>
+        <td>{{list.facing }}</td>
+        <td>{{list.furnishedStatus }}</td>
+        <td>{{list.price }}</td>
+      </tr>
+  </tbody>
+</table>
+  
+  

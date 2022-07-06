@@ -1,0 +1,74 @@
+<div>
+  <h2 style="color: red; text-align: center;padding: 10px;">Register Property Here!</h2>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="PropertyType">PropertyType</label>
+          <input
+            type="text"
+            class="form-control"
+            id="PropertyType"
+            required
+            [(ngModel)]="property.PropertyType"
+            name="PropertyType"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Description">Description</label>
+          <input
+            class="form-control"
+            id="Description"
+            required
+            [(ngModel)]="property.Description"
+            name="Description"
+          />
+        </div>
+        <div class="form-group">
+            <label for="City">City</label>
+            <input
+              class="form-control"
+              id="City"
+              required
+              [(ngModel)]="property.City"
+              name="City"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Facing">Facing</label>
+            <input
+              class="form-control"
+              id="Facing"
+              required
+              [(ngModel)]="property.Facing"
+              name="Facing"
+            />
+          </div>
+          <div class="form-group">
+            <label for="FurnishedStatus">FurnishedStatus</label>
+            <input
+              class="form-control"
+              id="FurnishedStatus"
+              required
+              [(ngModel)]="property.FurnishedStatus"
+              name="FurnishedStatus"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Price">Price</label>
+            <input
+              class="form-control"
+              id="Price"
+              required
+              [(ngModel)]="property.Price"
+              name="Price"
+            />
+          </div>
+        <button (click)="saveProperty()" class="btn btn-success">Submit</button>
+      </div>
+      <div *ngIf="submitted">
+        <h4>New Property Listing Successfully!</h4>
+        <button class="btn btn-success" (click)="newProperty()">Add</button> &nbsp;
+        <a routerLink="/">Go To Home</a>
+      </div>
+    </div>
+  </div>
