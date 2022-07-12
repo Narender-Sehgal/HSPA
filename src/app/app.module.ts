@@ -8,13 +8,17 @@ import { PropertyDetailsComponent } from './components/property-details/property
 import { PropertyListComponent } from './components/property-list/property-list.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UserLoginComponent } from './components/user-login/user-login.component';
+import { UserRegisterComponent } from './components/user-register/user-register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddPropertyComponent,
     PropertyDetailsComponent,
-    PropertyListComponent
+    PropertyListComponent,
+    UserLoginComponent,
+    UserRegisterComponent
   ],
   imports: [
     BrowserModule,

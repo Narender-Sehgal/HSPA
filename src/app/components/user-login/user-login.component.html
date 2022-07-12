@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-6 m-auto">
+        <div class="card m-auto">
+            <div class="card-header">
+                User Login 
+                <div *ngIf="submitted">
+                    <h4>Login Successfully!</h4>
+                    <a routerLink="/add">Add New Property</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group col-12">
+                        <label for="uname">Email</label>
+                        <input type="email" class="form-control" id="email" [(ngModel)]="account.Email" name="Email" required>
+                    </div>  
+                    <div class="form-group col-12">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" id="password" [(ngModel)]="account.Password" name="Password" required>
+                    </div> 
+                    <button (click)="loginUser()" class="btn btn-primary col-12">Login</button>
+                </form>
+            </div>
+        </div>    
+    </div>
+</div>
